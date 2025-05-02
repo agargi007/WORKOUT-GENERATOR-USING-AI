@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Your AI Workout Plan</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<div class="container">
+    <h1>Your AI Workout Plan</h1>
+    <div class="goal-level">
+      <span class="goal"><strong>Goal:</strong> {{ goal }}</span>
+      <span class="level"><strong>Level:</strong> {{ level }}</span>
+    </div>
+    <div class="ai-plan">
+        <h2>Plan & Tips</h2>
+        <!-- Example of structured HTML for plan content; replace with Jinja2 variables as needed -->
+        <section class="plan-section">
+            <h3>Weekly Schedule</h3>
+            <ul>
+                <li><strong>Monday:</strong> Flexibility & Core</li>
+                <li><strong>Tuesday:</strong> Light Cardio & Strength</li>
+                <li><strong>Wednesday:</strong> Yoga/Active Recovery</li>
+                <!-- ... -->
+            </ul>
+        </section>
+        <section class="plan-section">
+            <h3>Daily Exercises</h3>
+            <ul>
+                <li>Warm-up: 5-10 minutes cardio</li>
+                <li>Dynamic stretches: arm swings, leg swings, torso twists</li>
+                <li>Strength: Squats, Push-ups, Lunges, etc.</li>
+                <!-- ... -->
+            </ul>
+        </section>
+        <aside class="tips-box">
+            <h3>Tips</h3>
+            <ul>
+                <li>Listen to your body and rest as needed.</li>
+                <li>Stay hydrated throughout the day.</li>
+                <li>Make workouts enjoyable-try new activities or invite a friend.</li>
+            </ul>
+        </aside>
+    </div>
+    <a class="generate-again" href="{{ url_for('index') }}">Generate Another Plan</a>
+</div>
+<div class="watermark">~created by Gargi Yekhande</div>
+</body>
+</html>

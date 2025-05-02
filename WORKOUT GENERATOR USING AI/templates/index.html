@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AI Workout Generator</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<div class="container">
+    <h1>AI Workout Generator</h1>
+    <form method="post">
+        <label for="goal">Fitness Goal:</label>
+        <select id="goal" name="goal" required>
+            <option value="Build Muscle">Build Muscle</option>
+            <option value="Lose Weight">Lose Weight</option>
+            <option value="Increase Endurance">Increase Endurance</option>
+            <option value="Improve Flexibility">Improve Flexibility</option>
+        </select>
+        <label for="level">Fitness Level:</label>
+        <select id="level" name="level" required>
+            <option value="Beginner">Beginner</option>
+            <option value="Intermediate">Intermediate</option>
+            <option value="Advanced">Advanced</option>
+        </select>
+        <button type="submit">Generate Workout Plan</button>
+    </form>
+</div>
+<div class="watermark">~created by Gargi Yekhande</div>
+
+</body>
+</html>
